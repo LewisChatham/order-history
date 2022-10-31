@@ -1,3 +1,4 @@
+// helper function to compare 2 strings and find the difference between them
 function getDifference(a, b)  {
   var i = 0;
   var j = 0;

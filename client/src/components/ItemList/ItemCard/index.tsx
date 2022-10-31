@@ -1,6 +1,7 @@
 import { PropsWithChildren } from "react"
 import './ItemCard.css'
 
+// create a type declaration for the order object
 type Order = {
   title: string,
   subtitle: string,
@@ -14,6 +15,7 @@ type ItemCardProps = {
 
 const ItemCard = (props:PropsWithChildren<ItemCardProps>) => {
 
+  // destructure the key:values for the card from order prop
   const {title, subtitle, price, image} = props.order
 
   return (
