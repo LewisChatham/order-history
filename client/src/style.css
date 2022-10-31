@@ -1,0 +1,62 @@
+:root {
+  --spacing: 22px;
+  --spacingLarger: 32px;
+  --colorWhite: #ffffff;
+  --colorGrey1: #f0f0f0;
+  --colorGrey2: #e5e5e5;
+  --colorBlue1: #51bced;
+  --colorBlue2: #0d81c4;
+  --logoWidth: 62px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --spacing: 32px;
+    --logoWidth: 84px;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+  background-color: var(--colorGrey1);
+}
+
+main {
+  padding-top: 32px;
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+
+/* Utility */
+.u-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing);
+}
+
+/* Navbar */
+.Navbar {
+  width: 100%;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--colorGrey2);
+  background-color: var(--colorWhite);
+}
+
+.Navbar__container {
+  display: flex;
+  align-items: center;
+}
+
+.Navbar__logo {
+  width: var(--logoWidth);
+  margin-right: var(--spacing);
+  padding-right: var(--spacing);
+  border-right: 1px solid var(--colorGrey2);
+}
